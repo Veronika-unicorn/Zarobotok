@@ -1,6 +1,5 @@
 design/
 !build/readme.md
-img/*
 !img/readme.md
 node_modules/
 package-lock.json
