@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 375px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $sm-up) {
+    width: $sm-container;
+  }
+
+  @media (min-width: $md-up) {
+    width: $md-container;
+  }
+}
+
+main {
+  padding-top: 80px;
+}
+
+.hidden {
+  &-sm-down {
+    @media (max-width: $sm-down) {
+      display: none !important;
+    }
+  }
+  &-sm-up {
+    @media (min-width: $sm-up) {
+      display: none !important;
+    }
+  }
+
+  &-md-down {
+    @media (max-width: $md-down) {
+      display: none !important;
+    }
+  }
+
+  &-md-up {
+    @media (min-width: $md-up) {
+      display: none !important;
+    }
+  }
+}

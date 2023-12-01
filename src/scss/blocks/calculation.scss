@@ -1,0 +1,111 @@
+.calculation {
+  padding-bottom: 40px;
+    
+  @media (min-width: $sm-up) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $md-up) {
+    padding-bottom: 120px;
+  }
+
+  &__range {
+    display: flex;
+    flex-direction: column;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 19px;
+      padding: 16px 16px 20px;
+
+      @media (min-width: $sm-up) {
+        padding: 24px;
+      }
+
+      @media (min-width: $md-up) {
+        border-radius: 12px;
+        padding: 32px;
+      }
+    }
+
+    &__top-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      @media (min-width: $sm-up) {
+        align-items: center;
+      }
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: -0.33px;
+      color: #000000;
+      margin-right: 16px;
+
+      @media (min-width: $sm-up) {
+        font-size: 20px;
+      }
+    }
+
+    &__value {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 25px;
+      letter-spacing: -0.18px;
+      color: #1437F5;
+    }
+
+    &__slider {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.1) 60%);
+      border-radius: 10px;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+      margin: 29px 0;
+
+      &::-moz-range-progress {
+        background: #1437F5;
+      }
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+                appearance: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #1437F5;
+        cursor: pointer;
+      }
+
+      &::-moz-range-thumb {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #1437F5;
+        cursor: pointer;
+      }
+    }
+
+    &__sum {
+      &-text {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -0.33px;
+        color: #000000;
+      }
+    }
+  }
+}

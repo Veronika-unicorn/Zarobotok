@@ -1,0 +1,140 @@
+.intro {
+  &__wrapper {
+    padding-top: 20px;
+
+    @media (min-width: $sm-up) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: $md-up) {
+      padding-top: 40px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__text-side {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    @media (min-width: $sm-up) {
+      width: 45%;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $md-up) {
+      width: 50%;
+      padding-top: 25px;
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 51px;
+    letter-spacing: -1.56px;
+    color: #000000;
+    margin: 0 0 36px;
+
+    @media (min-width: $md-up) {
+      font-size: 70px;
+      line-height: 66px;
+    }
+
+    &-top {
+      display: block;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: -0.13px;
+      text-transform: uppercase;
+      color: #AAAAAA;
+      margin-bottom: 20px;
+    }
+
+    &-down {
+      color: #BFBFBF;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.26px;
+    color: #000000;
+    margin-bottom: 20px;
+
+    @media (min-width: $md-up) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  &__button {
+    width: 343px;
+
+    @media (min-width: $sm-up) {
+      width: 320px;
+    }
+
+    @media (min-width: $md-up) {
+      width: 193px;
+    }
+
+    &:first-of-type {
+      margin-bottom: 10px;
+
+      @media (min-width: $md-up) {
+        margin-right: 10px;
+        margin-bottom: 0;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+
+      @media (min-width: $sm-up) {
+        margin: 0;
+      }
+
+      @media (min-width: $md-up) {
+        flex-direction: row;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__img {
+    width: 343px;
+    height: 411px;
+
+    @media (min-width: $sm-up) {
+      width: 396px;
+      height: 487px;
+    }
+
+    @media (min-width: $md-up) {
+      width: 480px;
+      height: 568px;
+    }
+
+    &-side {
+      display: flex;
+      justify-content: center;
+
+      @media (min-width: $sm-up) {
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+
+      @media (min-width: $md-up) {
+        width: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+<section class="calculation" id="calculation">
+  <div class="container">
+    <h2 class="title calculation__title">
+      Расчет заработка.
+      <span>
+        Узнай, сколько ты можешь заработать
+      </span>
+    </h2>
+    <div class="calculation__range__wrapper">
+      <div class="calculation__range">
+        <div class="calculation__range__top-content">
+          <p  class="calculation__range__title">
+            Сколько дней готов уделять работе?
+          </p>
+          <p class="calculation__range__value" id="dayValue"></p>
+        </div>
+        <input class="calculation__range__slider" id="dayRange" type="range" min="1" max="30" value="7">
+      </div>
+      <div class="calculation__range">
+        <div class="calculation__range__top-content">
+          <p  class="calculation__range__title">
+            Сколько часов в день Вы готовы работать?
+          </p>
+          <p class="calculation__range__value" id="hourValue"></p>
+        </div>
+        <input class="calculation__range__slider" id="hourRange" type="range" min="1" max="8" value="3">
+      </div>
+      <div class="calculation__range">
+        <div class="calculation__range__top-content">
+          <p  class="calculation__range__title">
+            Какую сумму готовы ставить на каждый матч?
+          </p>
+          <p class="calculation__range__value" id="sumValue"></p>
+        </div>
+        <input class="calculation__range__slider" id="sumRange" type="range" min="10" max="300" step="10" value="10">
+      </div>
+
+      <div class="calculation__range__sum">
+        <p class="calculation__range__sum-text">
+          =
+          <span class="calculation__range__sum-value"></span>
+            $ / мес
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
